@@ -11,11 +11,14 @@ Esperamos que o RockPriority possa ser útil para você, ajudando a organizar se
 ## Como testar a aplicação
 
 Navegue pelo terminal até o nivel do arquivo angular.json e execute paralelamente os seguintes comandos:
+
 1-
+
 ```bash
     json-server --watch db.json
 ```
 2-
+
 ```
     npm start
 ```
