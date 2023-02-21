@@ -1,0 +1,21 @@
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Preço do Ingresso</th>
+            <th scope="col">Excluir</th>
+            <th scope="col">Editar</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let banda of bandas">
+            <td scope="row">{{banda.id}}</td>
+            <td>{{banda.nome}}</td>
+            <td>{{banda.preco |currency:'BRL'}}</td>
+            <td><button type="button" class="btn btn-danger" (click)="excluirItem(banda.id)">Excluir</button></td>
+            <td><button type="button" class="btn btn-primary" (click)="atualizar(banda.id)">Editar</button></td>
+        </tr>
+    </tbody>
+
+</table>

@@ -1,0 +1,15 @@
+<div>
+    <div class="row">
+        <label for="nome" class="form-label">Nome da Banda</label>
+        <input for="nome" class="form-control" [(ngModel)]="banda.nome">
+        <label for="preco" class="form-label">Preço do Ingresso</label>
+        <input for="preco" class="form-control" [(ngModel)]="banda.preco">
+        <br>
+    </div>
+</div>
+
+<br> 
+
+<div class="row">
+<button type="button" class="btn btn-success" (click)="adicionar()">{{textoBotao}}</button>
+</div>
